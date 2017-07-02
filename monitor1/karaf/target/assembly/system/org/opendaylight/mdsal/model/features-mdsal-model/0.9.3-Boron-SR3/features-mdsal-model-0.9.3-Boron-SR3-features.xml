@@ -1,0 +1,25 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="odl-mdsal-models-0.9.3-Boron-SR3" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <repository>mvn:org.opendaylight.mdsal/features-mdsal/2.1.3-Boron-SR3/xml/features</repository>
+  <feature name="odl-mdsal-models" version="0.9.3-Boron-SR3" description="OpenDaylight :: MD-SAL :: Models">
+    <feature version="2.1.3-Boron-SR3">odl-mdsal-binding-base</feature>
+    <bundle>mvn:org.opendaylight.mdsal.model/iana-afn-safi/2013.07.04.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/iana-if-type-2014-05-08/2014.05.08.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-inet-types/2010.09.24.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-interfaces/2014.05.08.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-yang-types/2010.09.24.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-yang-types-20130715/2013.07.15.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-restconf/2013.10.19.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/yang-ext/2013.09.07.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/opendaylight-l2-types/2013.08.27.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-ted/2013.10.21.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-topology/2013.10.21.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-topology-isis/2013.10.21.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-topology-ospf/2013.10.21.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-topology-l3-unicast-igp/2013.10.21.9.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-network-2015-06-08/1.1.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-inet-types-2013-07-15/1.1.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-type-util/1.0.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-packet-fields/0.7.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.mdsal.model/ietf-access-control-list/0.7.3-Boron-SR3</bundle>
+  </feature>
+</features>

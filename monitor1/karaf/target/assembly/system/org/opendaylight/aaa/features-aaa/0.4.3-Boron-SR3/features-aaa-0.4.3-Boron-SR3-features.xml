@@ -1,0 +1,212 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="odl-aaa-0.4.3-Boron-SR3" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <repository>mvn:org.opendaylight.aaa/features-aaa-api/0.4.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.yangtools/features-yangtools/1.0.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.controller/features-config/0.5.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.mdsal/features-mdsal/2.1.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.controller/features-mdsal/1.4.3-Boron-SR3/xml/features</repository>
+  <feature name="odl-aaa-authn-no-cluster" description="OpenDaylight :: AAA :: Authentication - NO CLUSTER" version="0.4.3-Boron-SR3">
+    <feature version="0.4.3-Boron-SR3">odl-aaa-api</feature>
+    <feature version="1.0.3-Boron-SR3">odl-yangtools-common</feature>
+    <feature version="2.1.3-Boron-SR3">odl-mdsal-binding-base</feature>
+    <feature version="1.4.3-Boron-SR3">odl-mdsal-broker</feature>
+    <feature version="0.5.3-Boron-SR3">odl-config-core</feature>
+    <feature>war</feature>
+    <bundle>mvn:com.sun.jersey/jersey-servlet/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-core/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-server/1.17</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.dependencymanager/4.3.0</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.metatype/1.1.2</bundle>
+    <bundle>mvn:net.sf.ehcache/ehcache/2.8.3</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.common/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.authzserver/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.resourceserver/1.0.0</bundle>
+    <bundle>mvn:commons-codec/commons-codec/1.10</bundle>
+    <bundle>wrap:mvn:org.json/json/20131018</bundle>
+    <bundle>wrap:mvn:org.apache.commons/commons-lang3/3.4</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-shiro/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-core/1.2.5</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-web/1.2.5</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-sts/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-store/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-basic/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.osgi/org.osgi.enterprise/4.2.0</bundle>
+    <bundle>wrap:mvn:com.h2database/h2/1.4.191</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-h2-store/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-idmlight/0.4.3-Boron-SR3</bundle>
+    <configfile finalname="etc/idmtool">mvn:org.opendaylight.aaa/aaa-idmlight/0.4.3-Boron-SR3/py/config</configfile>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-databind/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.datatype/jackson-datatype-json-org/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.3.2</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-idpmapping/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.glassfish/javax.json/1.0.4</bundle>
+    <configfile finalname="/etc/org.opendaylight.aaa.authn.cfg">mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.tokens.cfg">mvn:org.opendaylight.aaa/aaa-authn-store/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.federation.cfg">mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.filterchain.cfg">mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3/cfg/config</configfile>
+  </feature>
+  <feature name="odl-aaa-authn" description="OpenDaylight :: AAA :: Authentication - NO CLUSTER" version="0.4.3-Boron-SR3">
+    <feature version="0.4.3-Boron-SR3">odl-aaa-api</feature>
+    <feature version="1.0.3-Boron-SR3">odl-yangtools-common</feature>
+    <feature version="2.1.3-Boron-SR3">odl-mdsal-binding-base</feature>
+    <feature version="1.4.3-Boron-SR3">odl-mdsal-broker</feature>
+    <feature version="0.5.3-Boron-SR3">odl-config-core</feature>
+    <feature>war</feature>
+    <bundle>mvn:com.sun.jersey/jersey-servlet/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-core/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-server/1.17</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.dependencymanager/4.3.0</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.metatype/1.1.2</bundle>
+    <bundle>mvn:net.sf.ehcache/ehcache/2.8.3</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.common/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.authzserver/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.resourceserver/1.0.0</bundle>
+    <bundle>mvn:commons-codec/commons-codec/1.10</bundle>
+    <bundle>wrap:mvn:org.json/json/20131018</bundle>
+    <bundle>wrap:mvn:org.apache.commons/commons-lang3/3.4</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-shiro/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-core/1.2.5</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-web/1.2.5</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-sts/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-store/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-basic/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.osgi/org.osgi.enterprise/4.2.0</bundle>
+    <bundle>wrap:mvn:com.h2database/h2/1.4.191</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-h2-store/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-idmlight/0.4.3-Boron-SR3</bundle>
+    <configfile finalname="etc/idmtool">mvn:org.opendaylight.aaa/aaa-idmlight/0.4.3-Boron-SR3/py/config</configfile>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-databind/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.datatype/jackson-datatype-json-org/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.3.2</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-idpmapping/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.glassfish/javax.json/1.0.4</bundle>
+    <configfile finalname="/etc/org.opendaylight.aaa.authn.cfg">mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.tokens.cfg">mvn:org.opendaylight.aaa/aaa-authn-store/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.federation.cfg">mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.filterchain.cfg">mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3/cfg/config</configfile>
+  </feature>
+  <feature name="odl-aaa-authn-mdsal-cluster" description="OpenDaylight :: AAA :: Authentication :: MD-SAL" version="0.4.3-Boron-SR3">
+    <feature version="1.0.3-Boron-SR3">odl-yangtools-common</feature>
+    <feature version="2.1.3-Boron-SR3">odl-mdsal-binding-base</feature>
+    <feature version="1.4.3-Boron-SR3">odl-mdsal-broker</feature>
+    <feature version="0.5.3-Boron-SR3">odl-config-core</feature>
+    <bundle>mvn:org.apache.felix/org.apache.felix.dependencymanager/4.3.0</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.metatype/1.1.2</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.common/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.authzserver/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.resourceserver/1.0.0</bundle>
+    <bundle>mvn:commons-codec/commons-codec/1.8</bundle>
+    <bundle>wrap:mvn:org.json/json/20131018</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-shiro/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-core/1.2.5</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-web/1.2.5</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-api/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-sts/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-mdsal-api/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-mdsal-store-impl/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-basic/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3</bundle>
+    <feature version="0.4.3-Boron-SR3">odl-aaa-encryption-service</feature>
+    <bundle>mvn:org.opendaylight.aaa/aaa-idmlight/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-databind/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.datatype/jackson-datatype-json-org/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.3.2</bundle>
+    <bundle>wrap:mvn:com.h2database/h2/1.4.191</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-idpmapping/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.glassfish/javax.json/1.0.4</bundle>
+    <feature>war</feature>
+    <bundle>mvn:com.sun.jersey/jersey-servlet/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-core/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-server/1.17</bundle>
+    <configfile finalname="/etc/org.opendaylight.aaa.authn.cfg">mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.federation.cfg">mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.filterchain.cfg">mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3/cfg/config</configfile>
+  </feature>
+  <feature name="odl-aaa-sssd-plugin" description="OpenDaylight :: AAA :: SSSD Federation Plugin" version="0.4.3-Boron-SR3">
+    <feature version="0.4.3-Boron-SR3">odl-aaa-authn</feature>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-sssd/0.4.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-aaa-authn-sssd-no-cluster" description="OpenDaylight :: AAA :: SSSD Federation - NO CLUSTER" version="0.4.3-Boron-SR3">
+    <feature version="0.4.3-Boron-SR3">odl-aaa-authn-no-cluster</feature>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-sssd/0.4.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-aaa-authn-cassandra-cluster" description="OpenDaylight :: AAA :: Authentication - Cassandra" version="0.4.3-Boron-SR3">
+    <feature version="0.4.3-Boron-SR3">odl-aaa-api</feature>
+    <feature version="1.0.3-Boron-SR3">odl-yangtools-common</feature>
+    <feature version="2.1.3-Boron-SR3">odl-mdsal-binding-base</feature>
+    <feature version="1.4.3-Boron-SR3">odl-mdsal-broker</feature>
+    <feature version="0.5.3-Boron-SR3">odl-config-core</feature>
+    <feature>war</feature>
+    <bundle>mvn:com.sun.jersey/jersey-servlet/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-core/1.17</bundle>
+    <bundle>mvn:com.sun.jersey/jersey-server/1.17</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.dependencymanager/4.3.0</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.metatype/1.1.2</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.common/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.authzserver/1.0.0</bundle>
+    <bundle>mvn:org.apache.oltu.oauth2/org.apache.oltu.oauth2.resourceserver/1.0.0</bundle>
+    <bundle>mvn:commons-codec/commons-codec/1.10</bundle>
+    <bundle>wrap:mvn:org.json/json/20131018</bundle>
+    <bundle>wrap:mvn:org.apache.commons/commons-lang3/3.4</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-shiro/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-core/1.2.5</bundle>
+    <bundle>mvn:org.apache.shiro/shiro-web/1.2.5</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-sts/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-basic/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:io.netty/netty-transport/4.0.27.Final</bundle>
+    <bundle>mvn:io.netty/netty-codec/4.0.27.Final</bundle>
+    <bundle>mvn:io.netty/netty-common/4.0.27.Final</bundle>
+    <bundle>mvn:io.netty/netty-buffer/4.0.27.Final</bundle>
+    <bundle>mvn:io.netty/netty-handler/4.0.27.Final</bundle>
+    <bundle>mvn:com.codahale.metrics/metrics-core/3.0.2</bundle>
+    <bundle>mvn:com.datastax.cassandra/cassandra-driver-core/2.1.9</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-cassandra-store/0.4.3-Boron-SR3</bundle>
+    <configfile finalname="etc/opendaylight/karaf/08-aaa-cassandra-store-config.xml">mvn:org.opendaylight.aaa/aaa-cassandra-store/0.4.3-Boron-SR3/xml/config</configfile>
+    <configfile finalname="etc/aaacassandra.cfg">mvn:org.opendaylight.aaa/aaa-cassandra-store/0.4.3-Boron-SR3/cfg/config-1</configfile>
+    <bundle>mvn:org.opendaylight.aaa/aaa-idmlight/0.4.3-Boron-SR3</bundle>
+    <configfile finalname="etc/idmtool">mvn:org.opendaylight.aaa/aaa-idmlight/0.4.3-Boron-SR3/py/config</configfile>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.core/jackson-databind/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.datatype/jackson-datatype-json-org/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.3.2</bundle>
+    <bundle>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.3.2</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.aaa/aaa-authn-idpmapping/0.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.glassfish/javax.json/1.0.4</bundle>
+    <configfile finalname="/etc/org.opendaylight.aaa.authn.cfg">mvn:org.opendaylight.aaa/aaa-authn/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.tokens.cfg">mvn:org.opendaylight.aaa/aaa-authn-store/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.federation.cfg">mvn:org.opendaylight.aaa/aaa-authn-federation/0.4.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="/etc/org.opendaylight.aaa.filterchain.cfg">mvn:org.opendaylight.aaa/aaa-filterchain/0.4.3-Boron-SR3/cfg/config</configfile>
+  </feature>
+  <feature name="odl-aaa-encryption-service" description="OpenDaylight :: AAA :: Encryption Service" version="0.4.3-Boron-SR3">
+    <feature version="1.0.3-Boron-SR3">odl-yangtools-common</feature>
+    <feature version="2.1.3-Boron-SR3">odl-mdsal-binding-base</feature>
+    <feature version="1.4.3-Boron-SR3">odl-mdsal-broker</feature>
+    <feature version="0.5.3-Boron-SR3">odl-config-core</feature>
+    <bundle>mvn:org.opendaylight.aaa/aaa-encrypt-service/0.4.3-Boron-SR3</bundle>
+    <configfile finalname="etc/opendaylight/datastore/initial/config/aaa-encrypt-service-config.xml">mvn:org.opendaylight.aaa/aaa-encrypt-service/0.4.3-Boron-SR3/xml/config</configfile>
+  </feature>
+</features>

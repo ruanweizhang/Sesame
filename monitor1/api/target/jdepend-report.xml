@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.opmdc.rev150105">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>4</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="$YangModelBindingProvider.java">
+                    org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.opmdc.rev150105.$YangModelBindingProvider
+                </Class>
+                <Class sourceFile="$YangModuleInfoImpl.java">
+                    org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.opmdc.rev150105.$YangModuleInfoImpl
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>org.opendaylight.yangtools.yang.binding</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.opendaylight.yangtools.yang.binding">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

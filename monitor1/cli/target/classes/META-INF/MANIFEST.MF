@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1498799988226
+Build-Jdk: 1.8.0_121
+Built-By: imac
+Bundle-Description: OpenDaylight is leading the transformation to Open S
+ oftware Defined Networking (SDN). For more information, please see http
+ s://www.opendaylight.org
+Bundle-DocURL: https://www.opendaylight.org
+Bundle-License: https://www.eclipse.org/legal/epl-v10.html
+Bundle-ManifestVersion: 2
+Bundle-Name: opmdc-cli
+Bundle-SymbolicName: org.opendaylight.opmdc.cli
+Bundle-Vendor: OpenDaylight
+Bundle-Version: 0.1.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.opendaylight.opmdc.cli.api;version="0.1.0",org.opend
+ aylight.opmdc.cli.commands;uses:="org.apache.karaf.shell.commands,org.a
+ pache.karaf.shell.console,org.opendaylight.opmdc.cli.api";version="0.1.
+ 0"
+Import-Package: org.apache.karaf.shell.commands;version="[3.0,4)",org.ap
+ ache.karaf.shell.console;version="[3.0,4)",org.opendaylight.controller.
+ md.sal.binding.api;version="[1.4,2)",org.opendaylight.opmdc.cli.api,org
+ .slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.0.0.201509101326

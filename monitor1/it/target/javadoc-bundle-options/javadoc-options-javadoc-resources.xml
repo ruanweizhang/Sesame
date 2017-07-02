@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javadocOptions>
+  <tags>
+    <tag>
+      <name>goal</name>
+      <head>Goal:</head>
+    </tag>
+    <tag>
+      <name>requiresProject</name>
+      <head>Requires project:</head>
+    </tag>
+    <tag>
+      <name>threadSafe</name>
+      <head>Threadsafe</head>
+    </tag>
+    <tag>
+      <name>phase</name>
+      <head>Phase:</head>
+    </tag>
+  </tags>
+  <docletArtifacts>
+    <docletArtifact />
+  </docletArtifacts>
+  <tagletArtifacts>
+    <tagletArtifact />
+  </tagletArtifacts>
+  <links>
+    <link>http://doc.akka.io/japi/akka/2.4.7/</link>
+    <link>https://google.github.io/guava/releases/18.0/api/docs/</link>
+    <link>https://google.github.io/guava/releases/19.0/api/docs/</link>
+    <link>http://netty.io/4.0/api/</link>
+  </links>
+  <javadocResourcesDirectory>src/test/javadoc</javadocResourcesDirectory>
+</javadocOptions>

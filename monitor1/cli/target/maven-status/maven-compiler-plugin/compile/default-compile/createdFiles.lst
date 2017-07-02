@@ -1,0 +1,3 @@
+org/opendaylight/opmdc/cli/api/OpmdcCliCommands.class
+org/opendaylight/opmdc/cli/commands/OpmdcCliTestCommand.class
+org/opendaylight/opmdc/cli/impl/OpmdcCliCommandsImpl.class

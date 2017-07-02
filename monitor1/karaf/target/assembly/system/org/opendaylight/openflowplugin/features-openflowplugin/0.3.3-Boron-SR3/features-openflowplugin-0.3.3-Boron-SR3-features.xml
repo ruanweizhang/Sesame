@@ -1,0 +1,81 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="openflowplugin-0.3.3-Boron-SR3" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <repository>mvn:org.opendaylight.controller/features-mdsal/1.4.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.netconf/features-restconf/1.4.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.openflowjava/features-openflowjava/0.8.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.dlux/features-dlux/0.4.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.yangtools/features-yangtools/1.0.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.mdsal.model/features-mdsal-model/0.9.3-Boron-SR3/xml/features</repository>
+  <feature name="odl-openflowplugin-flow-services-ui" description="OpenDaylight :: Openflow Plugin :: Flow Services :: UI" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-flow-services-rest</feature>
+    <feature version="0.4.3-Boron-SR3">odl-dlux-core</feature>
+    <feature version="1.4.3-Boron-SR3">odl-mdsal-apidocs</feature>
+  </feature>
+  <feature name="odl-openflowplugin-flow-services-rest" description="OpenDaylight :: Openflow Plugin :: Flow Services :: REST" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-flow-services</feature>
+    <feature version="1.4.3-Boron-SR3">odl-restconf</feature>
+  </feature>
+  <feature name="odl-openflowplugin-flow-services" description="OpenDaylight :: Openflow Plugin :: Flow Services" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-app-config-pusher</feature>
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-app-topology</feature>
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-app-forwardingrules-manager</feature>
+  </feature>
+  <feature name="odl-openflowplugin-southbound" description="OpenDaylight :: Openflow Plugin :: Li southbound API implementation " version="0.3.3-Boron-SR3">
+    <feature version="1.4.3-Boron-SR3">odl-mdsal-broker</feature>
+    <feature version="0.8.3-Boron-SR3">odl-openflowjava-protocol</feature>
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-nsf-model</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin/openflowplugin-common/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin/openflowplugin-api/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin/openflowplugin/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin/openflowplugin-impl/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin/openflowplugin-extension-api/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.controller/liblldp/0.11.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin/openflowplugin-blueprint-config/0.3.3-Boron-SR3</bundle>
+    <configfile finalname="etc/org.opendaylight.openflowplugin.cfg">mvn:org.opendaylight.openflowplugin/openflowplugin-blueprint-config/0.3.3-Boron-SR3/cfg/config</configfile>
+    <configfile finalname="etc/opendaylight/datastore/initial/config/default-openflow-connection-config.xml">mvn:org.opendaylight.openflowplugin/openflowplugin-blueprint-config/0.3.3-Boron-SR3/xml/config</configfile>
+    <configfile finalname="etc/opendaylight/datastore/initial/config/legacy-openflow-connection-config.xml">mvn:org.opendaylight.openflowplugin/openflowplugin-blueprint-config/0.3.3-Boron-SR3/xml/legacyConfig</configfile>
+    <configfile finalname="etc/opendaylight/karaf/42-openflowplugin-Li.xml">mvn:org.opendaylight.openflowplugin/openflowplugin-controller-config/0.3.3-Boron-SR3/xml/config-Li</configfile>
+  </feature>
+  <feature name="odl-openflowplugin-nsf-model" version="0.3.3-Boron-SR3" description="OpenDaylight :: OpenflowPlugin :: NSF :: Model">
+    <feature version="0.9.3-Boron-SR3">odl-mdsal-models</feature>
+    <bundle>mvn:org.opendaylight.controller.model/model-inventory/1.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.controller.model/model-topology/1.4.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin.model/model-flow-base/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin.model/model-flow-statistics/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin.model/model-flow-service/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-drop-test" description="OpenDaylight :: Openflow Plugin :: Drop Test" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-flow-services</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin/test-common/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin/drop-test-karaf/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-app-table-miss-enforcer" description="OpenDaylight :: Openflow Plugin :: Application - table-miss-enforcer" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-southbound</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/table-miss-enforcer/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-app-config-pusher" description="OpenDaylight :: Openflow Plugin :: Application - default config-pusher" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-southbound</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/of-switch-config-pusher/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-app-topology" description="OpenDaylight :: Openflow Plugin :: Application - topology" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-southbound</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/lldp-speaker/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/topology-lldp-discovery/0.3.3-Boron-SR3</bundle>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/topology-manager/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-app-bulk-o-matic" description="OpenDaylight :: Openflow Plugin :: Application -  bulk flow operations support" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-southbound</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/bulk-o-matic/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-app-notifications" description="OpenDaylight :: Openflow Plugin :: Application - notifications supplier" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-southbound</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/notification-supplier/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-app-forwardingrules-manager" description="OpenDaylight :: Openflow Plugin :: Application - FRM" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-southbound</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/forwardingrules-manager/0.3.3-Boron-SR3</bundle>
+  </feature>
+  <feature name="odl-openflowplugin-app-forwardingrules-sync" description="OpenDaylight :: Openflow Plugin :: Application - FRS" version="0.3.3-Boron-SR3">
+    <feature version="0.3.3-Boron-SR3">odl-openflowplugin-southbound</feature>
+    <bundle>mvn:org.opendaylight.openflowplugin.applications/forwardingrules-sync/0.3.3-Boron-SR3</bundle>
+  </feature>
+</features>

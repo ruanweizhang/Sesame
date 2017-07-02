@@ -1,0 +1,6 @@
+org/opendaylight/opmdc/impl/GenericTransactionUtils.class
+org/opendaylight/opmdc/impl/InventoryUtils.class
+org/opendaylight/opmdc/impl/MatchUtils.class
+org/opendaylight/opmdc/impl/Monitor1Impl.class
+org/opendaylight/opmdc/impl/OpmdcProvider.class
+org/opendaylight/opmdc/impl/PacketHandler.class

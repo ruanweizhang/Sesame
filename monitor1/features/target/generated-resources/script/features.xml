@@ -1,0 +1,32 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="odl-opmdc-${project.version}" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <repository>mvn:org.opendaylight.yangtools/features-yangtools/1.0.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.controller/features-mdsal/1.4.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.mdsal.model/features-mdsal-model/0.9.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.netconf/features-restconf/1.4.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.dlux/features-dlux/0.4.3-Boron-SR3/xml/features</repository>
+  <repository>mvn:org.opendaylight.openflowplugin/features-openflowplugin/${openflowplugin.version}/xml/features</repository>
+  <feature name="odl-opmdc-api" version="${project.version}" description="OpenDaylight :: opmdc :: api">
+    <feature version="${mdsal.model.version}">odl-mdsal-models</feature>
+    <bundle>mvn:org.opendaylight.opmdc/opmdc-api/0.1.0-SNAPSHOT</bundle>
+    <feature version="${openflowplugin.version}">odl-openflowplugin-southbound</feature>
+  </feature>
+  <feature name="odl-opmdc" version="${project.version}" description="OpenDaylight :: opmdc">
+    <feature version="${mdsal.version}">odl-mdsal-broker</feature>
+    <feature version="${project.version}">odl-opmdc-api</feature>
+    <bundle>mvn:org.opendaylight.opmdc/opmdc-impl/0.1.0-SNAPSHOT</bundle>
+    <feature version="${openflowplugin.version}">odl-openflowplugin-southbound</feature>
+  </feature>
+  <feature name="odl-opmdc-rest" version="${project.version}" description="OpenDaylight :: opmdc :: REST">
+    <feature version="${project.version}">odl-opmdc</feature>
+    <feature version="${restconf.version}">odl-restconf</feature>
+  </feature>
+  <feature name="odl-opmdc-ui" version="${project.version}" description="OpenDaylight :: opmdc :: UI">
+    <feature version="${project.version}">odl-opmdc-rest</feature>
+    <feature version="${restconf.version}">odl-mdsal-apidocs</feature>
+    <feature version="${dlux.version}">odl-dlux-yangui</feature>
+  </feature>
+  <feature name="odl-opmdc-cli" version="${project.version}" description="OpenDaylight :: opmdc :: CLI">
+    <feature version="${project.version}">odl-opmdc</feature>
+    <bundle>mvn:org.opendaylight.opmdc/opmdc-cli/0.1.0-SNAPSHOT</bundle>
+  </feature>
+</features>

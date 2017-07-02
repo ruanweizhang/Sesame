@@ -1,0 +1,83 @@
+Invoking Maven for the goals: [org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:test-javadoc] with no properties
+
+M2_HOME=/usr/local/apache-maven-3.5.0
+MAVEN_OPTS= -Xmx2096m -XX:MaxPermSize=512m
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre
+JAVA_OPTS=null
+
+[INFO] Scanning for projects...
+[WARNING] The project org.opendaylight.opmdc:opmdc-features:jar:0.1.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building opmdc-features 0.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-javadoc-plugin:2.10.3:test-javadoc (default-cli) > generate-test-sources @ opmdc-features >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ opmdc-features ---
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.1:revision (get-git-infos) @ opmdc-features ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (pre-unit-test) @ opmdc-features ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (check-license) @ opmdc-features ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ opmdc-features ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] >>> maven-pmd-plugin:3.6:cpd-check (cpd) > :cpd @ opmdc-features >>>
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.6:cpd (cpd) @ opmdc-features ---
+[INFO] 
+[INFO] <<< maven-pmd-plugin:3.6:cpd-check (cpd) < :cpd @ opmdc-features <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.6:cpd-check (cpd) @ opmdc-features ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:unpack (unpack-license) @ opmdc-features ---
+[INFO] Configured Artifact: org.opendaylight.odlparent:odl-license:0.1.3-Boron-SR3:jar
+[INFO] Unpacking /Users/imac/.m2/repository/org/opendaylight/odlparent/odl-license/0.1.3-Boron-SR3/odl-license-0.1.3-Boron-SR3.jar to /Users/imac/Desktop/git/monitor1/features/target/classes with includes "" and excludes "META-INF/**"
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:resolve (default) @ opmdc-features ---
+[INFO] 
+[INFO] --- script-maven-plugin:1.0.0:execute (add-version-to-features) @ opmdc-features ---
+[INFO] executing groovy script
+[INFO] Updating repository declarations
+[INFO] Processing feature: odl-opmdc-api
+[INFO] Processing feature: odl-opmdc
+[INFO] Processing feature: odl-opmdc-rest
+[INFO] Processing feature: odl-opmdc-ui
+[INFO] Processing feature: odl-opmdc-cli
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-resource (default) @ opmdc-features ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (filter) @ opmdc-features ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/imac/Desktop/git/monitor1/features/src/main/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ opmdc-features ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/imac/Desktop/git/monitor1/features/src/main/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ opmdc-features ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< maven-javadoc-plugin:2.10.3:test-javadoc (default-cli) < generate-test-sources @ opmdc-features <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.3:test-javadoc (default-cli) @ opmdc-features ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.896 s
+[INFO] Finished at: 2017-06-30T13:20:38+08:00
+[INFO] Final Memory: 81M/915M
+[INFO] ------------------------------------------------------------------------

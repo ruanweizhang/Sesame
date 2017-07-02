@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>opmdc - Checkstyle report</title>
+    <link>https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest/</link>
+    <description>opmdc - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2017 OpenDaylight</copyright>
+    <item>
+      <title>File: 10,
+             Errors: 0,
+             Warnings: 1278,
+             Infos: 0
+      </title>
+            <link>https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.impl.InventoryUtils.java">org/opendaylight/opmdc/impl/InventoryUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  43
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.impl.MatchUtils.java">org/opendaylight/opmdc/impl/MatchUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  57
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.cli.commands.OpmdcCliTestCommand.java">org/opendaylight/opmdc/cli/commands/OpmdcCliTestCommand.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.cli.impl.OpmdcCliCommandsImpl.java">org/opendaylight/opmdc/cli/impl/OpmdcCliCommandsImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.impl.OpmdcProvider.java">org/opendaylight/opmdc/impl/OpmdcProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.impl.Monitor1Impl.java">org/opendaylight/opmdc/impl/Monitor1Impl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1005
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.it.OpmdcIT.java">org/opendaylight/opmdc/it/OpmdcIT.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.cli.api.OpmdcCliCommands.java">org/opendaylight/opmdc/cli/api/OpmdcCliCommands.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.impl.PacketHandler.java">org/opendaylight/opmdc/impl/PacketHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  143
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://nexus.opendaylight.org/content/sites/site//org.opendaylight.opmdc/latest//checkstyle.html#org.opendaylight.opmdc.impl.GenericTransactionUtils.java">org/opendaylight/opmdc/impl/GenericTransactionUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

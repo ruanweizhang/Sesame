@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="com.google.common.base">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="com.google.common.collect">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="com.google.common.util.concurrent">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.math">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.concurrent">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.controller.md.sal.binding.api">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.controller.md.sal.common.api.data">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.controller.sal.binding.api">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.opmdc.impl">
+            <Stats>
+                <TotalClasses>6</TotalClasses>
+                <ConcreteClasses>6</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>42</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="GenericTransactionUtils.java">
+                    org.opendaylight.opmdc.impl.GenericTransactionUtils
+                </Class>
+                <Class sourceFile="InventoryUtils.java">
+                    org.opendaylight.opmdc.impl.InventoryUtils
+                </Class>
+                <Class sourceFile="MatchUtils.java">
+                    org.opendaylight.opmdc.impl.MatchUtils
+                </Class>
+                <Class sourceFile="Monitor1Impl.java">
+                    org.opendaylight.opmdc.impl.Monitor1Impl
+                </Class>
+                <Class sourceFile="OpmdcProvider.java">
+                    org.opendaylight.opmdc.impl.OpmdcProvider
+                </Class>
+                <Class sourceFile="PacketHandler.java">
+                    org.opendaylight.opmdc.impl.PacketHandler
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.google.common.base</Package>
+                <Package>com.google.common.collect</Package>
+                <Package>com.google.common.util.concurrent</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.math</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.opendaylight.controller.md.sal.binding.api</Package>
+                <Package>org.opendaylight.controller.md.sal.common.api.data</Package>
+                <Package>org.opendaylight.controller.sal.binding.api</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.yang.types.rev130715</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.output.action._case</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.set.nw.dst.action._case</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.set.nw.src.action._case</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.list</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.address.address</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.inventory.rev130819</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.inventory.rev130819.tables</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.inventory.rev130819.tables.table</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.port.rev130925.queues</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.flow</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.instruction.instruction</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.instruction.instruction.apply.actions._case</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.instruction.list</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.l2.types.rev130827</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.ethernet.match.fields</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.match</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.match.layer._3.match</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.match.layer._4.match</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.vlan.match.fields</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.packet.service.rev130709</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.port.statistics.rev131214</Package>
+                <Package>org.opendaylight.yang.gen.v1.urn.opendaylight.queue.statistics.rev131216</Package>
+                <Package>org.opendaylight.yangtools.concepts</Package>
+                <Package>org.opendaylight.yangtools.yang.binding</Package>
+                <Package>org.slf4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.yang.types.rev130715">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.output.action._case">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.set.nw.dst.action._case">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.action.set.nw.src.action._case">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.action.list">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.action.types.rev131112.address.address">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.inventory.rev130819">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.inventory.rev130819.tables">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.inventory.rev130819.tables.table">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.port.rev130925.queues">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.flow">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.instruction.instruction">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.instruction.instruction.apply.actions._case">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.flow.types.rev131026.instruction.list">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.nodes">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.l2.types.rev130827">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.ethernet.match.fields">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.match">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.match.layer._3.match">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.match.layer._4.match">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.model.match.types.rev131026.vlan.match.fields">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.packet.service.rev130709">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.port.statistics.rev131214">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yang.gen.v1.urn.opendaylight.queue.statistics.rev131216">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yangtools.concepts">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.opendaylight.yangtools.yang.binding">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.slf4j">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

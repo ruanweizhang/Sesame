@@ -1,0 +1,3 @@
+org.opendaylight.opmdc.cli.api
+org.opendaylight.opmdc.cli.commands
+org.opendaylight.opmdc.cli.impl
